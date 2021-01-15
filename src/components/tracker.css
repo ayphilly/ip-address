@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap');
+
+
+.tracker {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.tracker .tracker-pattern {
+    width: 100%;
+    height: 30%;
+}
+
+.tracker-pattern img {
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    color: #fff;
+}
+.tracker-box {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0px;
+    /* left: 50%; */
+    margin:0 auto;
+    z-index:11;
+    /* background-color: violet; */
+
+}
+
+.tracker-box .tracker-result {
+    width: 90%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(175, 175, 175, 0.78);
+    -moz-box-shadow:    1px 1px 15px 0px rgba(175, 175, 175, 0.78);
+    box-shadow:         1px 1px 15px 0px rgba(175, 175, 175, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .ip {
+    margin-left: 20px;
+} */
+.ip, .location, .timezone, .isp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    justify-content: center;
+    width: 50%;
+    /* background-color: red; */
+    
+    
+}
+
+hr {
+    /* width: 10px; */
+    height: 80px;
+    border: .5px solid #e6e6e6;
+    
+}
+.ip p:first-child, .location p:first-child, .timezone p:first-child, .isp p:first-child {
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    line-height: 15px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* opacity: .5; */
+}
+
+.ip p:last-child, .location p:last-child, .timezone p:last-child, .isp p:last-child {
+    font-size: 24px;
+    color: hsl(0, 0%, 17%) ;
+    line-height: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -10px;
+    
+}
+
+
+#mapid { 
+
+    width: 100%;
+    height: 70%;
+    /* background-color: tomato; */
+    z-index:10;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+input {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: inherit;
+  width: 350px;
+  height: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: inherit;
+  line-height: 18px;
+  border: none;
+  border-radius: 0.7rem 0 0 0.7rem;
+  background-color: #fff;
+    
+}
+input:focus {
+    outline: none;
+    /* box-shadow: 0.2rem 0.8rem 1.6rem #e6e6e6; */
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    border-radius: 0 0.7rem 0.7rem 0;
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+
+}
